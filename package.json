@@ -1,0 +1,22 @@
+{
+  "name": "spotify-api",
+  "version": "1.0.0",
+  "description": "overlay to allow accessing and managing your songs more convenient.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taheer6/spotify-widget.git"
+  },
+  "author": "Taheer Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taheer6/spotify-widget/issues"
+  },
+  "homepage": "https://github.com/taheer6/spotify-widget#readme",
+  "devDependencies": {
+    "electron": "^28.1.3"
+  }
+}
