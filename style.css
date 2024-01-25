@@ -1,0 +1,147 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-family: Arial, sans-serif;
+    background-color: rgba(18, 18, 18, 0.5); 
+    /*border-radius: 28px;*/ /* Figure out how to work later */
+    overflow: hidden; 
+}
+
+.main-container {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.left-container, .right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.left-container {
+    width: 40%; 
+}
+
+.right-container {
+    width: 60%; 
+}
+
+.album-cover {
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: contain; 
+}
+
+
+.right-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 30px;
+    width: 80px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#song-control {
+    color: #b2b2b3;
+    font-size: 20px;
+}
+
+#song-control:hover {
+    color:white;
+}
+
+.song-name {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 5%;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.time-and-track-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px; /* Add padding to avoid time labels touching the window edge */
+}
+
+#elapsed-time, #total-duration {
+    color: white; /* Adjust the color as needed */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 9.5px; /* Adjust the size as needed */
+    margin-top: 5%;
+}
+
+.seek-track {
+    width: 218px; 
+    position: relative;
+    margin-top: 5px;
+}
+
+#playback-slider {
+    width: calc(100% - 10px);
+    margin: 0 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #404040;
+    height: 4px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#playback-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0; /* Hide the thumb by default */
+}
+
+#playback-slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0; /* Hide the thumb by default */
+}
+
+#playback-slider:hover::-webkit-slider-thumb {
+    opacity: 1; /* Show the thumb on hover */
+}
+
+#playback-slider:hover::-moz-range-thumb {
+    opacity: 1; /* Show the thumb on hover */
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/108608e2ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <div class="album-cover">
+                
+                <!-- dummy image, replace -->
+                <img src="https://dummyimage.com/140x140/bfbfbf/fff.jpg" alt="Album Cover" class="cover"/>
+    
+            </div>
+        </div>
+    
+        <div class="right-container">
+            
+            <!-- Song name textbox -->
+            <div class="song-name">
+                <span id="song-name">Song Name</span>
+            </div>
+    
+            <!-- Track slider -->
+            <div class="time-and-track-container">
+
+                <span id="elapsed-time">0:00</span>
+                <div class="seek-track">
+                    <input type="range" id="playback-slider" min="0" max="100" value="0">
+                </div>
+                <span id="total-duration">3:30</span>
+                
+            </div>
+    
+            <!-- Buttons for playack -->
+            <div class="right-buttons">
+                <button id="song-control"><i class="fa-solid fa-backward-step"></i></button>
+                <button id="play-button"><i class="fa-solid fa-circle-pause"></i></button> <!-- insert: <i class="fa-solid fa-circle-play"></i> for play button -->
+                <button id="song-control"><i class="fa-solid fa-forward-step"></i></button>
+            </div>
+    
+        </div>
+    </div>
+</body>
+</html>
